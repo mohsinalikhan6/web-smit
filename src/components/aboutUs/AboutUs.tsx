@@ -1,5 +1,7 @@
 import { Button, Col, Divider } from 'antd';
 import { Layout } from 'antd';
+import saylaniPic2 from '../images/30.jpg'
+import SMITLogo from '../images/31.jpg'
 
 
 const style: React.CSSProperties = { background: '#fff', padding: '8px 0', display: 'flex', justifyContent: 'space-around', alignItems: 'center' };
@@ -29,12 +31,12 @@ function AboutUs() {
         <Content style={contentStyle}>
           <Col >
             <div>
-              <img src="./images/30.jpg" alt="aboutImage" />
+              <img src={saylaniPic2} alt="aboutImage" />
             </div>
           </Col>
           <Col >
             <div>
-              <img src="./images/31.jpg" alt="aboutImage" />
+              <img src={SMITLogo} alt="aboutImage" />
             </div>
           </Col>
         </Content>
@@ -46,7 +48,7 @@ function AboutUs() {
         <Content style={contentStyle}>
           <Col >
             <div style={contentStyle}>
-              <img src="./images/30.jpg" alt="aboutImage" />
+              <img src={saylaniPic2} alt="aboutImage" />
             </div>
             <div>
               <p className='text-center text-black'>

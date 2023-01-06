@@ -1,6 +1,7 @@
 import { Col, Divider, Row } from 'antd';
 import { Layout } from 'antd';
 import { Button, Form, Input, Descriptions } from 'antd';
+import contact from '../images/contact.jpg'
 
 const { Content } = Layout;
 
@@ -41,7 +42,7 @@ function ContactUs() {
         </Divider>
         <Row>
           <Col className='text-4xl' style={styling}>
-            <img src="./images/contact.jpg" alt="contactImage" />
+            <img src={contact} alt="contactImage" />
           </Col>
         </Row>
         <Col>
