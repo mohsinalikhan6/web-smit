@@ -40,7 +40,7 @@ function ContactUs() {
             Contact Us
           </div>
         </Divider>
-        <Row>
+        <Row >
           <Col className='text-4xl' style={styling}>
             <img src={contact} alt="contactImage" />
           </Col>
@@ -69,7 +69,7 @@ function ContactUs() {
           </Row>
         </Col>
         <Row>
-          <Col span={12}>
+          <Col span={8} className='bg-blue-100'>
             <Descriptions title="Contact Details" layout="vertical">
               <Descriptions.Item label="Telephone">34900009</Descriptions.Item>
               <Descriptions.Item label="email">info@smit.com</Descriptions.Item>
@@ -78,7 +78,7 @@ function ContactUs() {
               </Descriptions.Item>
             </Descriptions>
           </Col>
-          <Col span={12}>
+          <Col span={16}>
             <Content>
               <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col className="gutter-row" span={24}>

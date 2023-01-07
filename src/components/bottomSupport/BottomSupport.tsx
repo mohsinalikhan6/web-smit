@@ -1,6 +1,5 @@
 import { Col, Divider, Row } from 'antd';
 import { Card } from 'antd';
-import { Image } from 'antd';
 import webImage from '../images/web2.jpg'
 import graphicImage from '../images/graphics.jpg'
 import aiImage from '../images/ai.jpg'
@@ -25,10 +24,16 @@ function BottomSupport() {
                         <Card
                             hoverable
                             style={{ width: 320 }}
-                            cover={<Image
-                                src={webImage}
-                            />}>
-                            <Meta title="Web and Mobile Development Course" description="www.websmit.com.pk" />
+                            cover={<img alt="webCourse" src={webImage} />}>
+                            <Meta title="SMIT Web & Mobile Course" />
+                            <br />
+                            <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">
+                                About Web Development
+                            </a>
+                            <br />
+                            <a href="./form" target="_blank" rel="noopener noreferrer">
+                                SMIT AdmissionForm
+                            </a>
                         </Card>
                     </div>
                 </Col>
@@ -37,10 +42,16 @@ function BottomSupport() {
                         <Card
                             hoverable
                             style={{ width: 320 }}
-                            cover={<Image
-                                src={graphicImage}
-                            />}>
-                            <Meta title="Graphics Designing Course" description="www.websmit.com.pk" />
+                            cover={<img alt="graphicCourse" src={graphicImage} />}>
+                            <Meta title="SMIT Graphics Course" />
+                            <br />
+                            <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer">
+                                About Graphics Designing
+                            </a>
+                            <br />
+                            <a href="./form" target="_blank" rel="noopener noreferrer">
+                                SMIT AdmissionForm
+                            </a>
                         </Card>
                     </div>
                 </Col>
@@ -49,10 +60,16 @@ function BottomSupport() {
                         <Card
                             hoverable
                             style={{ width: 320 }}
-                            cover={<Image
-                                src={aiImage}
-                            />}>
-                            <Meta title="AI Course" description="www.websmit.com.pk" />
+                            cover={<img alt="aiCourse" src={aiImage} />}>
+                            <Meta title="SMIT AI Course" />
+                            <br />
+                            <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" rel="noopener noreferrer">
+                                About AI
+                            </a>
+                            <br />
+                            <a href="./form" target="_blank" rel="noopener noreferrer">
+                                AdmissionForm
+                            </a>
                         </Card>
                     </div>
                 </Col>

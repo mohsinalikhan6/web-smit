@@ -21,7 +21,7 @@ function Footnote() {
             </Divider>
             <Descriptions layout="vertical" className="justify-center">
               <Descriptions.Item label="Telephone">34900009</Descriptions.Item>
-              <Descriptions.Item label="email">info@smit.com</Descriptions.Item>
+              <Descriptions.Item label="Email">info@smit.com</Descriptions.Item>
               <Descriptions.Item label="Address" span={2}>
                 No. 00 SMIT Building, Mumtaz Mobile Mall, Gulshan-e-Iqbal, Karachi
               </Descriptions.Item>

@@ -1,6 +1,16 @@
-import { Button, Divider, DatePicker, Checkbox, Col, Form, Input, Row, Select } from 'antd';
+import { Button, Divider, DatePicker, Checkbox, Col, Form, Input, Row, Select, Upload } from 'antd';
+
+import { UploadOutlined } from '@ant-design/icons';
 
 const { Option } = Select;
+
+const normFile = (e: any) => {
+  console.log('Upload event:', e);
+  if (Array.isArray(e)) {
+    return e;
+  }
+  return e?.fileList;
+};
 
 const formItemLayout = {
   labelCol: {
@@ -136,6 +146,17 @@ const AddmisionForm: React.FC = () => {
         </Form.Item>
 
         <Form.Item
+          name="upload"
+          label="Upload Your Picture"
+          valuePropName="fileList"
+          getValueFromEvent={normFile}
+        >
+          <Upload name="logo" action="/upload.do" listType="picture">
+            <Button icon={<UploadOutlined />} className='bg-sky-800 text-white'>Click to upload</Button>
+          </Upload>
+        </Form.Item>
+
+        <Form.Item
           name="courses"
           label="Courses"
           rules={[{ required: true, message: 'Please select Course!' }]}
@@ -190,7 +211,7 @@ const AddmisionForm: React.FC = () => {
         </Form.Item>
         <Form.Item {...tailFormItemLayout}>
           <Button type="primary" className='bg-sky-800'>
-            Register
+            Submit
           </Button>
         </Form.Item>
       </Form>
