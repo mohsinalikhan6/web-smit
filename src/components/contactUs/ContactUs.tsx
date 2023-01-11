@@ -2,6 +2,39 @@ import { Col, Divider, Row } from 'antd';
 import { Layout } from 'antd';
 import { Button, Form, Input, Descriptions } from 'antd';
 import contact from '../images/contact.jpg'
+import { useState } from 'react'
+
+
+function ContactUs() {
+
+  const [details, setDetails] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  })
+
+  const PostData = async (e: any) => {
+    e.preventDefault()
+
+    const { name, email, phone, message} = details;
+
+    const res = await fetch("https://web-smit-default-rtdb.firebaseio.com/contact.json",
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message,
+        })
+      })
+
+  }
+
 
 const { Content } = Layout;
 
@@ -14,15 +47,6 @@ const onFinish = (values: any) => {
   console.log(values);
 }
 
-// const contentStyle: React.CSSProperties = {
-//   height: '500px',
-//   background: '#fff',
-//   display: 'flex',
-//   justifyContent: 'center',
-//   color: '#0066b3'
-// };
-
-
 const styling: React.CSSProperties = {
   display: 'flex',
   justifyContent: 'center',
@@ -31,7 +55,7 @@ const styling: React.CSSProperties = {
 
 }
 
-function ContactUs() {
+
   return (
     <>
       <Layout>
@@ -50,19 +74,33 @@ function ContactUs() {
             <Col span={18}>
               <Form {...layout} name="nest-messages" onFinish={onFinish}>
                 <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
-                  <Input />
+                  <Input 
+                  onChange={(e) =>
+                    setDetails({ ...details, name: e.target.value })}
+                  />
                 </Form.Item>
                 <Form.Item name={['user', 'email']} label="Email" rules={[{ required: true, type: 'email' }]}>
-                  <Input />
+                  <Input 
+                  onChange={(e) =>
+                    setDetails({ ...details, email: e.target.value })}
+                  />
                 </Form.Item>
                 <Form.Item label="Phone" rules={[{ type: 'number', min: 0, max: 99 }]}>
-                  <Input />
+                  <Input 
+                  onChange={(e) =>
+                    setDetails({ ...details, phone: e.target.value })}
+                  />
                 </Form.Item>
                 <Form.Item name={['user', 'message']} label="Message">
-                  <Input.TextArea />
+                  <Input.TextArea 
+                  onChange={(e) =>
+                    setDetails({ ...details, message: e.target.value })}
+                  />
                 </Form.Item>
               </Form>
-              <Button type="primary" className='bg-sky-800 absolute bottom-0 right-0'>
+              <Button type="primary" className='bg-sky-800 absolute bottom-0 right-0'
+              onClick={PostData}
+              >
                 Submit
               </Button>
             </Col>

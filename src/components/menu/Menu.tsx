@@ -15,7 +15,7 @@ const items: MenuProps['items'] = [
     },
     {
         label: (
-            <a href="./gallery" target="_blank" rel="noopener noreferrer">
+            <a href="./gallery" rel="noopener noreferrer">
                 Gallery
             </a>
         ),
@@ -25,7 +25,7 @@ const items: MenuProps['items'] = [
 
     {
         label: (
-            <a href="./courses" target="_blank" rel="noopener noreferrer">
+            <a href="./courses" rel="noopener noreferrer">
                 Courses
             </a>
         ),
@@ -61,7 +61,7 @@ const items: MenuProps['items'] = [
     },
     {
         label: (
-            <a href="./about" target="_blank" rel="noopener noreferrer">
+            <a href="./about" rel="noopener noreferrer">
                 About Us
             </a>
         ),
@@ -70,7 +70,7 @@ const items: MenuProps['items'] = [
     },
     {
         label: (
-            <a href="./contact" target="_blank" rel="noopener noreferrer">
+            <a href="./contact" rel="noopener noreferrer">
                 Contact Us
             </a>
         ),
@@ -79,7 +79,7 @@ const items: MenuProps['items'] = [
     },
     {
         label: (
-            <a href="./form" target="_blank" rel="noopener noreferrer">
+            <a href="./form" rel="noopener noreferrer">
                 Admission Form
             </a>
         ),
