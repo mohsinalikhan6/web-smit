@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/web-smit/static/css/main.7d465718.css",
+    "main.js": "/web-smit/static/js/main.19ed7660.js",
+    "static/js/787.c408cc4f.chunk.js": "/web-smit/static/js/787.c408cc4f.chunk.js",
+    "static/media/1.jpg": "/web-smit/static/media/1.2665f6057b8050d4fd52.jpg",
+    "static/media/14.jpg": "/web-smit/static/media/14.32af4f7533137d224950.jpg",
+    "static/media/5.jpg": "/web-smit/static/media/5.2347ed9337cdfcfc3d6c.jpg",
+    "static/media/12.jpg": "/web-smit/static/media/12.6ec3a7a2450a74033ec7.jpg",
+    "static/media/4.jpg": "/web-smit/static/media/4.d042bbd4a21947015eaa.jpg",
+    "static/media/30.jpg": "/web-smit/static/media/30.77775e8f0f23a0582b06.jpg",
+    "static/media/graphics.jpg": "/web-smit/static/media/graphics.1e8a97c4b644ee4aeac1.jpg",
+    "static/media/22.jpg": "/web-smit/static/media/22.4b1448c667a6448e8afb.jpg",
+    "static/media/31.jpg": "/web-smit/static/media/31.b40378e475b4fe9b009c.jpg",
+    "static/media/ccna.jpg": "/web-smit/static/media/ccna.e03957811e43362a894a.jpg",
+    "static/media/web2.jpg": "/web-smit/static/media/web2.eeecfc2a2e639966623d.jpg",
+    "static/media/contact.jpg": "/web-smit/static/media/contact.cb3b368fd4547c9fe8c5.jpg",
+    "static/media/21.jpg": "/web-smit/static/media/21.0544953a9cbca07cc3d5.jpg",
+    "static/media/24.jpg": "/web-smit/static/media/24.67758e1b1b75d4eaecf7.jpg",
+    "index.html": "/web-smit/index.html",
+    "main.7d465718.css.map": "/web-smit/static/css/main.7d465718.css.map",
+    "main.19ed7660.js.map": "/web-smit/static/js/main.19ed7660.js.map",
+    "787.c408cc4f.chunk.js.map": "/web-smit/static/js/787.c408cc4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d465718.css",
+    "static/js/main.19ed7660.js"
+  ]
+}
